@@ -36,7 +36,7 @@ async def account_login(bot: Client, m: Message):
 
 @bot.on_message(filters.command("rukja"))
 async def restart_handler(_, m):
-    await m.reply_text("**ruk gya baby**😊", True)
+    await m.reply_text("**ruk gya baby**😜", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
