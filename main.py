@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("HELLO I AM TXT DOWNLOADER \n\n BOT MADE BY @anu_yadav88** \n Send me /baby Command And Follow Steps..")
+    editable = await m.reply_text("HELLO I AM TXT DOWNLOADER \n\n BOT MADE BY @anu_yadav88**..")
 
 
 @bot.on_message(filters.command("rukja"))
