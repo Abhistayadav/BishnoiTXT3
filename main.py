@@ -31,19 +31,19 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hey Freind 😎 I Am A Bot For Download Links From Your **.TXT** File. \n\n **Bot Made By TUMHARI JAAN 🚩** \n Send me /baby Command And Follow Steps..")
+    editable = await m.reply_text("HELLO I AM TXT DOWNLOADER \n\n BOT MADE BY @anu_yadav88** \n Send me /baby Command And Follow Steps..")
 
 
 @bot.on_message(filters.command("rukja"))
 async def restart_handler(_, m):
-    await m.reply_text("**ruk gya baby**😜", True)
+    await m.reply_text("**ruk gya **😜", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
 @bot.on_message(filters.command(["baby"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('Send me **TXT File**⚡️')
+    editable = await m.reply_text('𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await bot.send_document(-1002081221561, x)
@@ -71,7 +71,7 @@ async def account_login(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Send Me Your Batch Name**")
+    await editable.edit("**Now Please Send Me Your Batch Name**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -111,7 +111,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://telegra.ph/file/32f106d692ff33700c464.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the Thumb url \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -163,7 +163,7 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[🎬] Vid_ID:** {str(count).zfill(3)}.\n **Tɪᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭} ({res}){MR}.mkv\n\n **Bᴀᴛᴄʜ** » **{raw_text0}**'
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.\n **Tɪᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭} ({res}){MR}.mkv\n\n **Bᴀᴛᴄʜ** » **{raw_text0}**'
                 cc1 = f'**[📕] Pdf_ID:** {str(count).zfill(3)}.\n **Tɪᴛʟᴇ » {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n\n **Bᴀᴛᴄʜ** » **{raw_text0}**'
                 if "drive" in url:
                     try:
@@ -190,7 +190,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⏬️ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶 ⏬️... »**\n\n**🧾Name »** `{name}\n♻️Quality » {raw_text2}`\n\n**🔗URL »** `{url}`\n\n **🚩Bot made by TUMHARI JAAN ❤️**"
+                    Show = f"**⏬️ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶 ⏬️... »**\n\n**🧾Name »** `{name}\n♻️Quality » {raw_text2}`\n\n**🔗URL »** `{url}`\n\n ** Bot made by @anu_yadav88 ❤️**"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -207,7 +207,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**DONE baby 😘😘**")
+    await m.reply_text("**DONE 😇**")
 
 
 bot.run()
